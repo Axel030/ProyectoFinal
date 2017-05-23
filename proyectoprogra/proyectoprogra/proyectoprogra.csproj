@@ -81,6 +81,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="comunidad.txt" />
+    <Content Include="DatosPropietarios.txt" />
+    <Content Include="Gastos.txt" />
+    <Content Include="Gastos2.txt" />
+    <Content Include="Propiedad.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
