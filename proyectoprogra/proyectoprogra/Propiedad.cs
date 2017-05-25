@@ -12,7 +12,9 @@ namespace proyectoprogra
         string codigoidentificador;
         int metroscuadrados;
         string nit;
-        string listaporcentajes;
+        List <string> listaporcentajes;
+
+
 
         public string Tiposdepropiedades
         {
