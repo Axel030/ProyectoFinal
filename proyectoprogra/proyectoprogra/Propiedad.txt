@@ -3,31 +3,27 @@
 80
 1234653-1
 E-30
-Banco Mundial
-Banca
+Banco Mundial;Banca
 L
 0-B
 80
 8972638-5
 E-30
-Hercules
-Seguros
+Hercules;Seguros
 ...
 P
 1-A
 90
 2345234-6
 E-20
-C-00
-VH
+C-00;VH
 3
 P
 1-B
 90
 1212121-5
 E-20
-C-00
-VN
+C-00;VN
 4
 ...
 G
