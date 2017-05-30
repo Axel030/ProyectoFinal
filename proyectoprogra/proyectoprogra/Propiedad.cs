@@ -13,7 +13,7 @@ namespace proyectoprogra
         int metroscuadrados;
         string nit;
         List <string> listaporcentajes;
-
+        string listapor;
 
 
         public string Tiposdepropiedades
@@ -68,7 +68,7 @@ namespace proyectoprogra
             }
         }
 
-        public string Listaporcentajes
+        public List<string> Listaporcentajes
         {
             get
             {
@@ -78,6 +78,19 @@ namespace proyectoprogra
             set
             {
                 listaporcentajes = value;
+            }
+        }
+
+        public string Listapor
+        {
+            get
+            {
+                return listapor;
+            }
+
+            set
+            {
+                listapor = value;
             }
         }
     }

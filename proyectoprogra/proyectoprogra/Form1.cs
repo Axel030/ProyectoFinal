@@ -115,14 +115,37 @@ namespace proyectoprogra
                     if (_textStreamReader.ReadLine()== "L")
                     {
                         Localcomercial localcomerciatemp = new Localcomercial();
+                        localcomerciatemp.Tiposdepropiedades = _textStreamReader.ReadLine();
+                        localcomerciatemp.Codigoidentificador = _textStreamReader.ReadLine();
+                        localcomerciatemp.Metroscuadrados = Convert.ToInt16 (_textStreamReader.ReadLine());
+                        localcomerciatemp.Nit = _textStreamReader.ReadLine();
+                        localcomerciatemp.Listapor = _textStreamReader.ReadLine();
+                        localcomerciatemp.Nombrecomercial = _textStreamReader.ReadLine();
+                        localcomerciatemp.Actividad = _textStreamReader.ReadLine();
                     }
                     if (_textStreamReader.ReadLine() == "G")
                     {
                         Garaje garajetemp = new Garaje();
+                        garajetemp.Tiposdepropiedades = _textStreamReader.ReadLine();
+                        garajetemp.Codigoidentificador = _textStreamReader.ReadLine();
+                        garajetemp.Metroscuadrados = Convert.ToInt16(_textStreamReader.ReadLine());
+                        garajetemp.Nit = _textStreamReader.ReadLine();
+                        garajetemp.Listapor = _textStreamReader.ReadLine();
+                        garajetemp.Abierta = _textStreamReader.ReadLine();
+                        garajetemp.Boddega = _textStreamReader.ReadLine();
+
                     }
                     if (_textStreamReader.ReadLine() == "P")
                     {
                         Piso pisotemp = new Piso();
+                        pisotemp.Tiposdepropiedades = _textStreamReader.ReadLine();
+                        pisotemp.Codigoidentificador = _textStreamReader.ReadLine();
+                        pisotemp.Metroscuadrados = Convert.ToInt16(_textStreamReader.ReadLine());
+                        pisotemp.Nit = _textStreamReader.ReadLine();
+                        pisotemp.Listapor = _textStreamReader.ReadLine();
+                        pisotemp.Vhabitual = _textStreamReader.ReadLine();
+                        pisotemp.Cuartos = _textStreamReader.ReadLine();
+
                     }
 
 
@@ -140,7 +163,30 @@ namespace proyectoprogra
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Form2 frm = new Form2();
+            frm.Show();
+            this.Hide();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 frm = new Form3();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form4 frm = new Form4();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form5 frm = new Form5();
+            frm.Show();
+            this.Hide();
         }
     }
 }
