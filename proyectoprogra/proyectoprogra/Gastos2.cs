@@ -10,7 +10,7 @@ namespace proyectoprogra
     {
         string idgastos;
         string descripcion;
-        int importe;
+        string importe;
         string zonadereparto;
 
         public string Idgastos
@@ -39,7 +39,7 @@ namespace proyectoprogra
             }
         }
 
-        public int Importe
+        public string Importe
         {
             get
             {

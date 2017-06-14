@@ -30,7 +30,7 @@ namespace proyectoprogra
                     Gastos2 gastos2temp = new Gastos2();
                     gastos2temp.Idgastos = _textStreamReader.ReadLine();
                     gastos2temp.Descripcion = _textStreamReader.ReadLine();
-                    gastos2temp.Importe = Convert.ToInt16(_textStreamReader.ReadLine());
+                    gastos2temp.Importe = _textStreamReader.ReadLine();
                     gastos2temp.Zonadereparto = _textStreamReader.ReadLine();
                     listagastos2.Add(gastos2temp);
                 }
@@ -49,6 +49,13 @@ namespace proyectoprogra
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = listagastos2;
             dataGridView1.Refresh();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+            frm.Show();
+            this.Hide();
         }
     }
 }

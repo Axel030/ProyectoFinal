@@ -50,5 +50,12 @@ namespace proyectoprogra
             dataGridView1.Refresh();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

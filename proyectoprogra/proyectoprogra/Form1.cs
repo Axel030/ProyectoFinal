@@ -23,7 +23,7 @@ namespace proyectoprogra
         List<Piso> listapiso = new List<Piso>();
         List<Garaje> listagaraje = new List<Garaje>();
 
-        public void cargando(bool a, bool b, bool c, bool d, bool e)
+        public void cargando(bool a, bool b, bool c, bool d, bool de)
         {
             if (a == true)
             {
@@ -92,16 +92,17 @@ namespace proyectoprogra
 
                 while (_textStreamReader.Peek() > -1)
                 {
+
                     Gastos2 gastos2temp = new Gastos2();
                     gastos2temp.Idgastos = _textStreamReader.ReadLine();
                     gastos2temp.Descripcion = _textStreamReader.ReadLine();
-                    gastos2temp.Importe = Convert.ToInt16(_textStreamReader.ReadLine());
+                    gastos2temp.Importe = _textStreamReader.ReadLine();
                     gastos2temp.Zonadereparto = _textStreamReader.ReadLine();
                     listagastos2.Add(gastos2temp);
                 }
                 _textStreamReader.Close();
             }
-            if ( e == true)
+            if ( de == true)
             {
                 Assembly _assembly; Stream _imageStream;
                 StreamReader _textStreamReader;
@@ -117,7 +118,7 @@ namespace proyectoprogra
                         Localcomercial localcomerciatemp = new Localcomercial();
                         localcomerciatemp.Tiposdepropiedades = _textStreamReader.ReadLine();
                         localcomerciatemp.Codigoidentificador = _textStreamReader.ReadLine();
-                        localcomerciatemp.Metroscuadrados = Convert.ToInt16 (_textStreamReader.ReadLine());
+                        localcomerciatemp.Metroscuadrados = _textStreamReader.ReadLine();
                         localcomerciatemp.Nit = _textStreamReader.ReadLine();
                         localcomerciatemp.Listapor = _textStreamReader.ReadLine();
                         localcomerciatemp.Nombrecomercial = _textStreamReader.ReadLine();
@@ -128,7 +129,7 @@ namespace proyectoprogra
                         Garaje garajetemp = new Garaje();
                         garajetemp.Tiposdepropiedades = _textStreamReader.ReadLine();
                         garajetemp.Codigoidentificador = _textStreamReader.ReadLine();
-                        garajetemp.Metroscuadrados = Convert.ToInt16(_textStreamReader.ReadLine());
+                        garajetemp.Metroscuadrados = _textStreamReader.ReadLine();
                         garajetemp.Nit = _textStreamReader.ReadLine();
                         garajetemp.Listapor = _textStreamReader.ReadLine();
                         garajetemp.Abierta = _textStreamReader.ReadLine();
@@ -140,7 +141,7 @@ namespace proyectoprogra
                         Piso pisotemp = new Piso();
                         pisotemp.Tiposdepropiedades = _textStreamReader.ReadLine();
                         pisotemp.Codigoidentificador = _textStreamReader.ReadLine();
-                        pisotemp.Metroscuadrados = Convert.ToInt16(_textStreamReader.ReadLine());
+                        pisotemp.Metroscuadrados = _textStreamReader.ReadLine();
                         pisotemp.Nit = _textStreamReader.ReadLine();
                         pisotemp.Listapor = _textStreamReader.ReadLine();
                         pisotemp.Vhabitual = _textStreamReader.ReadLine();
@@ -185,6 +186,13 @@ namespace proyectoprogra
         private void button4_Click(object sender, EventArgs e)
         {
             Form5 frm = new Form5();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form6 frm = new Form6();
             frm.Show();
             this.Hide();
         }

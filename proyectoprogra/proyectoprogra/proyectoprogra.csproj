@@ -78,6 +78,12 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Garaje.cs" />
     <Compile Include="Gastos.cs" />
     <Compile Include="Gastos2.cs" />
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,7 +138,7 @@
     <EmbeddedResource Include="DatosPropietarios.txt" />
     <EmbeddedResource Include="Gastos.txt" />
     <EmbeddedResource Include="Gastos2.txt" />
-    <Content Include="Propiedad.txt" />
+    <EmbeddedResource Include="Propiedad.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

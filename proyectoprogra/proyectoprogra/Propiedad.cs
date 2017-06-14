@@ -10,7 +10,7 @@ namespace proyectoprogra
     {
         string tiposdepropiedades;
         string codigoidentificador;
-        int metroscuadrados;
+        string metroscuadrados;
         string nit;
         List <string> listaporcentajes;
         string listapor;
@@ -42,7 +42,7 @@ namespace proyectoprogra
             }
         }
 
-        public int Metroscuadrados
+        public string Metroscuadrados
         {
             get
             {
